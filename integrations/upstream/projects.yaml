@@ -1,0 +1,43 @@
+schema_version: 1
+status: candidates_unverified
+# URLs são referências, não dependências fixadas nem homologadas.
+projects:
+  - name: fedora-kinoite
+    url: https://fedoraproject.org/atomic-desktops/kinoite/
+    role: candidate-base
+  - name: ublue-main
+    url: https://github.com/ublue-os/main
+    role: image-build-reference
+  - name: kwin
+    url: https://invent.kde.org/plasma/kwin
+    role: compositor
+  - name: wine
+    url: https://gitlab.winehq.org/wine/wine
+    role: windows-compatibility
+  - name: proton
+    url: https://github.com/ValveSoftware/Proton
+    role: gaming
+  - name: waydroid
+    url: https://github.com/waydroid/waydroid
+    role: android-compatibility
+  - name: flatpak
+    url: https://github.com/flatpak/flatpak
+    role: app-sandbox
+  - name: llama.cpp
+    url: https://github.com/ggml-org/llama.cpp
+    role: local-inference
+  - name: libreoffice
+    url: https://git.libreoffice.org/core
+    role: office-fallback
+  - name: artcraft
+    url: https://github.com/storytold/artcraft
+    role: creative-candidate
+  - name: wordcraft
+    url: https://github.com/storytold/wordcraft
+    role: word-processing-candidate
+  - name: gridcraft
+    url: https://github.com/storytold/gridcraft
+    role: spreadsheet-candidate
+  - name: deckcraft
+    url: https://github.com/storytold/deckcraft
+    role: presentation-candidate

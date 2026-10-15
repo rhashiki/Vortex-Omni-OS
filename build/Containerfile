@@ -1,0 +1,15 @@
+# Build 01: experimental Fedora Atomic derivative.
+# Pin BASE_IMAGE to a reviewed immutable digest before release.
+ARG BASE_IMAGE=ghcr.io/ublue-os/kinoite-main:stable
+FROM ${BASE_IMAGE}
+
+# Product identity is informational until a full release configuration is validated.
+COPY build/branding/vortex-omnios-release /usr/lib/vortex-omnios-release
+COPY build/branding/vortex-omnios-motd /etc/motd
+
+LABEL org.opencontainers.image.title="Vortex OmniOS (experimental)" \
+      org.opencontainers.image.description="Build 01 OmniFoundation experimental desktop image" \
+      org.opencontainers.image.source="https://github.com/rhashiki/Vortex-Omni-OS" \
+      org.opencontainers.image.licenses="NOASSERTION"
+
+# Bootc/OCI image only; not yet an installer ISO.

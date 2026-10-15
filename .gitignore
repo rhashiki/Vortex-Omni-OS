@@ -1,0 +1,8 @@
+*.iso
+*.qcow2
+*.raw
+*.img
+*.log
+.cache/
+output/
+artifacts/
